@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS --> 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="ap.js"></script>
+<script src="jquery.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+   <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+       <a class="navbar-brand" href="#">House Price</a>
+       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+           aria-expanded="false" aria-label="Toggle navigation"></button>
+       <div class="collapse navbar-collapse" id="collapsibleNavId">
+           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+               <li class="nav-item active">
+                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="#">Link</a>
+               </li>
+               
+           </ul>
+         
+       </div>
+   </nav>
+
+    <div class="container my-5" style="width: 570px;">
+    <div class="container my-5 text-center">
+       <h1>Predict price here</h1>
+    </div>
+
+        <form>
+            <div class="mb-3">
+          <label for="uiSqft" class="form-label">Enter Total sq.ft</label>
+          <input type="text" class="form-control" name="uiSqft" id="uiSqft" >
+        </div>
+        <div class="mb-3">
+          <label for="uiBHK" class="form-label">Number of Badrooms</label>
+          <input type="text" name="uiBHK" class="form-control" id="uiBHK">
+        </div>
+        <div class="mb-3">
+            <label for="uiBathrooms" class="form-label">Number of Bathrooms</label>
+            <input type="text" name="uiBathrooms" class="form-control" id="uiBathrooms">
+          </div>
+        <div class="mb-3 ">  
+            <label class="form-label" for="exampleCheck1">Select Location here</label>  
+            <select class="custom-select mb-4 d-block" id="uiLocations">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+        </div>
+        <button type="button"  id="estimatePriceButton"  onclick="onClickedEstimatePrice()" class="btn btn-primary">Predict</button>
+    </form>
+</div>
+  
+<div class="container " style="width: 200px;">
+    Predicted price around  
+    <div class="container mb-5 mt-1 p-2" id="uiEstimatedPrice" style="width: 200px; border-radius: 8px ; background-color: rgb(231, 223, 213);">
+       
+    </div>
+    </div>
+    
+     
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
